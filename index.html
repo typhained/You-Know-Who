@@ -7,6 +7,7 @@
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
 
+    <link rel="stylesheet" href="style.css" />
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
@@ -15,15 +16,32 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>Accueil</li>
-                <li>A propos</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="">LINK</a></li>
+                    <li class="uk-parent"><a href="">LINK</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </nav>        
     </header>
+    <div class="uk-grid">
 
+        <div class="uk-width-1-2">
+            <img src="https://files.cults3d.com/uploaders/12086353/illustration-file/bb7747fa-230c-4968-9be4-4e0204b9885a/3267592144_1_5_TdwTxXHX_large.jpg" alt="Beautiful_voldemort">
+            <p>Competences à écrire</p>
+        </div>
+        <div class="uk-width-1-2">
+            <h1>Formations</h1>
+            <img src="sly.png" alt="Serpentard"/>
+            <p>Mon parcours à Serpy!</p>
+        </div>
+    </div>
+        
+
+
+    
     <footer>
         <p>blabla</p>
         
