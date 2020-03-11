@@ -1,0 +1,44 @@
+body {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=100022),auto;
+    background-color: black;
+}
+
+.commentaire {
+    width: 250px;
+}
+
+#choixpeau {
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#choixpeau p {
+    color: white;
+}
+
+#choixpeau a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+#choixpeau img {
+    width:10vh;
+}
+
+
+footer {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px;
+    display: inline;
+
+}
+
+footer img {
+    width: 2vw;
+    margin: 3px;
+}
