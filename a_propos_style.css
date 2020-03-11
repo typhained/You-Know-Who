@@ -3,6 +3,9 @@ body {
     background-color: black;
     color: white;
 }
+a:hover {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=100022), auto;
+}
  /* ICON POUR REMONTER EN HAUT */
 
 #choixpeau {
