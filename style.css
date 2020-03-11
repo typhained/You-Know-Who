@@ -17,6 +17,10 @@ header {
     height: 70vh;
     margin-bottom: 5vh;
 }
+
+#test-target h1 {
+    font-size: 35px;
+}
 .uk-card {
     text-align: center;
     border-right: 1px solid grey;
@@ -56,7 +60,6 @@ header {
 
 
 footer {
-    height: 300px;
     text-align: center;
     text-transform: uppercase;
     padding: 2px;
