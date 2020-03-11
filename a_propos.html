@@ -5,17 +5,32 @@
         <title>You-Know-Who</title>
         <link rel="stylesheet" href="a_propos_style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- UIkit CSS -->
+            <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
-        <!-- UIkit JS -->
+            <!-- UIkit JS -->
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
         <link rel="icon" type="image/png" href="https://zupimages.net/up/20/11/gvu4.png" />
     </head>
     <body>
-        <nav>
-
-        </nav>
+        <header>
+            <!-- NavBar -->
+            <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+                <nav class="uk-navbar-container uk-light" uk-navbar="dropbar: true;" style="position: relative; z-index: 980; background-color: black;">
+                    <div class="uk-navbar-left">
+            
+                        <ul class="uk-navbar-nav">
+                            <li><a href="#">Accueil</a></li>
+                            <li class="uk-active">
+                                <a href="a_propos.html">A propos</a>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+            
+                    </div>
+                </nav>
+            </div>       
+        </header>
         <section>
             <h1>A propos de moi</h1>
             <div>
@@ -87,8 +102,21 @@
                 </li>
             </ul>
         </section>
+        <!-- Icon pour remonter au début -->
+        <div id="choixpeau">
+            <a href="#">
+                <img src="img/hat.png">
+                <p>TOP</p>
+            </a>
+        </div>
+        <!-- Footer -->
         <footer>
-
-        </footer>
+            <div>  
+                <p>Made with <span uk-icon="heart"></span> and brilliant by the Gorgeous You-Know-Who</p>
+                <a href=""><img src="img/linkedin.png"></a>
+                <a href=""><img src="img/insta.png"></a>
+                <a href=""><img src="img/fb.png"></a>
+            </div>     
+        </footer> 
     </body>
 </html>
