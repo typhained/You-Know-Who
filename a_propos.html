@@ -5,6 +5,12 @@
         <title>You-Know-Who</title>
         <link rel="stylesheet" href="a_propos_style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+<!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+        <link rel="icon" type="image/png" href="https://zupimages.net/up/20/11/gvu4.png" />
     </head>
     <body>
         <nav>
@@ -12,33 +18,74 @@
         </nav>
         <section>
             <h1>A propos de moi</h1>
-            <img src="https://zupimages.net/up/20/11/ygqo.jpg" alt="Tom Elvis Jedusor à Poudlard">
-
             <div>
+                <img src="https://zupimages.net/up/20/11/ygqo.jpg" alt="Tom Elvis Jedusor à Poudlard">
                 <p>J’ai toujours eu un talent particulier, j’ai toujours été spécial. </p>
             </div>
-            <div>
-                <p>J’ai grandit dans un orphelinat jusqu’à mes onze ans ; jusqu’au jour où Dumbledore est venu me chercher pour entrer
-                    à Poudlard. Je ne savais pas, à cette époque que ma place était réservée depuis ma naissance, car je suis le 
-                    descendant d’un des fondateurs de l’école : Salazar Serpentard. Afin d’être digne de son héritage et de maintenir 
-                    la grandeur de Poudlard, je me suis promis de traquer tous les sang-de-bourg qui ne méritent pas d’étudier la magie.
-                    C’est grâce à mes talents de Fourchelang que le Basilic et moi avons commencé, pendant ma scolarité, à chasser 
-                    tous ces moldus et sang-mélés comme mon père.
-                </p>
-            </div>
-            <div>
-                <p>J’étais un élève studieux et consciencieux, et ce sont ces qualités qui m’ont permises de valider mes BUSES & ASPIC. 
-                    Ma ruse, mon intelligence et ma capacité à toujours obtenir ce que je veux m’ont aidé à développer mes compétences 
-                    et mon savoir en magie noire, plus précisément, dans la magie des horcruxes. 
-                </p>
-            </div>
-            <div>
-                <p>Mon pouvoir, mes ambitions et mon désir de purifier le monde de la sorcellerie ne pouvaient être associés au nom de 
-                    mon pathétique père. Je décidais donc d’en faire un anagramme : « Tom Elvis Jedusor » devenait alors « Je suis Voldemort » 
-                    un nom qui continuera de terroriser le monde, même après ma mort. Nombreux sont les sorciers qui croient en mes idéologies.
-                    Ils me jurent allégeance et m’offrent leur vie pour devenir un de mes Mangemorts. 
-                </p>
-            </div>
+
+            <ul uk-accordion>
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">Mon enfance</a>
+                    <div class="uk-accordion-content">
+                        <p>J'ai découvert l'histoire de ma famille pendant mes études. Né orphelin d'une mère sorcière
+                             et d'un père moldu le 31 décembre 1929, j'ai passé les onze premières années de ma vie à l'orphelinat Wool. Je me 
+                             sentais déjà très différent des autres enfants ; jusqu’au jour où Dumbledore est venu me 
+                             chercher pour entrer à Poudlard. Il me révèle alors que je suis un sorcier.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">Ma scolarité à Poudlard</a>
+                    <div class="uk-accordion-content">
+                        <p>Je ne savais pas, à cette époque que ma place était réservée depuis ma naissance, car je suis le 
+                            descendant d’un des fondateurs de l’école : Salazar Serpentard. 
+                            J’étais un élève studieux, consciencieux et doté d'un grand talent : ce sont ces qualités qui 
+                            m’ont permises de valider mes BUSES & ASPIC.
+                            Les connaissance du professeur Slughorn et ma curiosité m'ont ouvert les portes d'une magie qui 
+                            allait être pour moi une façon de vaincre la mort : les horcruxes.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">Défendre les valeurs de ma famille</a>
+                    <div class="uk-accordion-content">
+                        <p>Afin d’être digne de l'héritage de ma famille et de maintenir la grandeur de Poudlard, 
+                            je me suis promis de traquer tous les sang-de-bourg qui ne méritent pas d’étudier la magie.
+                            C’est grâce à mes talents de Fourchelang que j'ai pu ouvrir la chambre des secrets ; une pièce cachée 
+                            par mon ancêtre Salazar dans laquelle se terre le Basilic, un serpent géant au pouvoir destructeur.
+                            Ma quête de purification commença par la mort de Myrtle Elizabeth Warren, une insupportable moldue 
+                            insignifiante. Je dûs ruser pour faire accuser un autre : cet abrutit d'Hagrid.
+                            Il me fallait également faire disparaître ceux qui avaient déshonnoré mon sang, la famille
+                            Jedusor ne pouvait pas être. J'entrepris donc de tuer mon géniteur ainsi que son père et m'arrangea 
+                            pour faire porter le châpeau à mon oncle, qui fût alors banni à Azkaban.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">Lord Voldemort</a>
+                    <div class="uk-accordion-content">
+                        <p>Après avoir tué mon père, je ne pouvais garder son nom infâme. Il m'en fallait un qui montre
+                            ma grandeur, mon talent et qu'il inspire une telle terreur que plus personne n'osera le prononcer
+                            à haute voix. Je décidais donc d’en faire un anagramme : « Tom Elvis Jedusor » devenait alors « Je suis Voldemort ». 
+                            Aujourd'hui, la pluspart des sorciers m'appelle "Vous savez qui".
+                        </p>
+                    </div>
+                </li>
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">Mon parcours après l'école</a>
+                    <div class="uk-accordion-content">
+                        <p> Je souhaitais devenir professeur de défense contre les forces du mal, mais ma candidature fût refusée 
+                            une première fois en raison de mon jeune âge. 
+                            Je dûs donc dans un premier temps travailler chez Barjow et Beurk. Mon charme naturel fit de moi 
+                            un vendeur talentueux. J'ai la capacité de briller dans tout ce que j'entreprends.
+                            Lorsque Dumbledore devint directeur de Poudlard à son tour, je fit une nouvelle candidature, toujours
+                            pour le même poste. 
+                            Cet affront engendra une haine en moi, je disparus quelques temps afin de commencer à regrouper 
+                            une troupe de sorcier qui serait mon armée personnelle : les mangemorts
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </section>
         <footer>
 
