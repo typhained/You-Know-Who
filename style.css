@@ -2,9 +2,11 @@ body {
     background-color: black;
     color: white;
     cursor: url(img/slytherin1.cur), auto;
-    padding: 5px;
     font-family: 'Barlow Condensed', sans-serif;
 
+}
+a:hover {
+    cursor: url(img/slytherin1.cur), auto;
 }
 
 header {
@@ -12,23 +14,34 @@ header {
 }
 
 
-
 #test-target {
-    height: 70vh;
+    height: 85vh;
     margin-bottom: 5vh;
 }
 
 #test-target h1 {
     font-size: 35px;
+    font-family: 'Rock Salt', cursive;
 }
+
+h3 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.para {
+    text-align: center;
+}
+
 .uk-card {
     text-align: center;
     border-right: 1px solid grey;
+    padding: 0;
 }
 
 .uk-card img {
     border-radius: 50%;
     padding: 1vh;
+    width: 70%
 }
 
 .parcours img {
