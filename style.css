@@ -6,6 +6,9 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
 
 }
+a:hover, img:hover {
+    cursor: url(img/slytherin1.cur), auto;
+}
 
 header {
     margin-bottom: 2vh;
