@@ -1,8 +1,30 @@
 body {
-    background-color: grey;
+    background-color: black;
     color: white;
+    cursor: url(img/slytherin1.cur), auto;
+    padding: 5px;
+    font-family: 'Barlow Condensed', sans-serif;
+
 }
 
-img {
+header {
+    margin-bottom: 2vh;
+}
+
+#test-target {
+    height: 70vh;
+    margin-bottom: 5vh;
+}
+.uk-card {
+    text-align: center;
+    border-right: 1px solid grey;
+}
+
+.parcours img {
     width: 30%;
+}
+
+
+footer {
+    height: 300px;
 }
