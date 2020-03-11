@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+
+<link rel="icon" type="image/png" href="https://www.zupimages.net/up/20/11/gvu4.png" />
+
+  <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="contact.css">
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <header>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <nav class="uk-navbar-container uk-light" uk-navbar="dropbar: true;" style="position: relative; z-index: 980; background-color: black;">
+                <div class="uk-navbar-left">
+        
+                    <ul class="uk-navbar-nav">
+                        <li ><a href="#">Accueil</a></li>
+                        <li>
+                            <a href="#">A propos</a>
+                        </li>
+                        <li class="uk-active"><a href="#">Contact</a></li>
+                    </ul>
+        
+                </div>
+            </nav>
+        </div>       
+    </header>
+
+
+    <div id="after_submit"></div>
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <label class="required" for="name">Your name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        <span id="name_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="email">Your email:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        <span id="email_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="message">Your message:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+        <span id="message_validation" class="error_message"></span>
+      </div>
+        
+        <input id="submit_button" type="submit" value="Send email" />
+    </form>
+
+
+
+    <div class="uk-position-relative uk-width-1-2 uk-visible-toggle uk-light" uk-slider="center: true">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+    
+            <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="https://soirmag.lesoir.be/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2018/09/26/node_180606/24364425/public/2018/09/26/B9717049397Z.1_20180926100437_000+GI2C3TB3K.2-0.jpg?itok=crWLPXev1542131652" alt="Nagini">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Nagini</h3>
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="https://vignette.wikia.nocookie.net/harrypotter/images/6/66/Peter_Pettigrow.jpg/revision/latest?cb=20091211194720&path-prefix=fr" alt="Peter Pettigrow">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Peter Pettigrow</h3>
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="https://vignette.wikia.nocookie.net/harrypotter/images/8/8f/PromoHP6_Severus_Rogue.jpg/revision/latest?cb=20090823152424&path-prefix=fr" alt="Severus Rogue">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Severus Rogue</h3>
+                            <p>Lorem ipsum dolor </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="https://vignette.wikia.nocookie.net/harrypotter/images/5/5d/PromoHP6_Fenrir_Greyback.jpg/revision/latest?cb=20090821070417&path-prefix=fr" alt="Fenrire Greyback">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Fenrir Greyback</h3>
+                            <p>Lorem ipsum dolor </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="https://vignette.wikia.nocookie.net/harrypotter/images/0/04/Bellatrix-promo-bellatrix-lestrange-28967575-1574-2100.jpg/revision/latest/scale-to-width-down/1000?cb=20141115084707&path-prefix=fr" alt="Bellatrix Lestrange">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Bellatrix Lestrange</h3>
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="https://vignette.wikia.nocookie.net/harrypotter/images/c/ce/PromoHP5_Lucius_Malefoy.jpg/revision/latest?cb=20091110145939&path-prefix=fr" alt="Lucius Malefoy">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Lucius Malefoy</h3>
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="https://vignette.wikia.nocookie.net/harrypotter/images/3/3c/PromoHP4_IgorKarkaroff.jpg/revision/latest?cb=20090918153048&path-prefix=fr" alt="Igor Karkaroff">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Igor Karkaroff</h3>
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="https://vignette.wikia.nocookie.net/harrypotter/images/2/2b/PromoHP4_Barty_Croupton_Jr.jpg/revision/latest?cb=20091110183236&path-prefix=fr" alt="Barty Croupton Jr">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Barty Croupton Jr</h3>
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+    
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+        </div>
+    
+        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        
+    </div>
+
+
+        <div id="choixpeau">
+            <a href="#">
+                <img src="img/hat.png">
+                <p>TOP</p>
+            </a>
+        </div>
+
+        <footer>
+            <div>  
+                <p>Made with <span uk-icon="heart"></span> and brilliant by the Gorgeous You-Know-Who</p>
+                <a href=""><img src="img/linkedin.png"></a>
+                <a href=""><img src="img/insta.png"></a>
+                <a href=""><img src="img/fb.png"></a>
+            </div>     
+        </footer> 
+
+</body>
+</html>
