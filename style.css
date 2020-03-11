@@ -11,6 +11,8 @@ header {
     margin-bottom: 2vh;
 }
 
+
+
 #test-target {
     height: 70vh;
     margin-bottom: 5vh;
@@ -20,11 +22,49 @@ header {
     border-right: 1px solid grey;
 }
 
+.uk-card img {
+    border-radius: 50%;
+    padding: 1vh;
+}
+
 .parcours img {
     width: 30%;
+}
+ 
+
+#choixpeau {
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#choixpeau p {
+    color: white;
+}
+
+#choixpeau a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+#choixpeau img {
+    width:10vh;
 }
 
 
 footer {
     height: 300px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px;
+    display: inline;
+
+}
+
+footer img {
+    width: 2vw;
+    margin: 3px;
 }
