@@ -15,29 +15,39 @@ body section {
     margin: 5% 15%;
     
 }
+
+ /*Images*/
 #young_voldy {
     width: 35%;
     border: grey 1px solid;
 }
+
 #iAmVoldy {
     width: 50%;
 }
+
 #blason {
     width: 35%;
     border: black;
 }
+
 #secret_door {
     width: 30%;
     border: grey 1px solid;
     margin: 0 2% 0 0;
 }
+
 #lucius {
     width: 30%;
     border: grey 1px solid;
 }
+
 #horcruxe {
     border: grey 1px solid;
 }
+
+/* ------------ */
+
 .title_page h1 {
     color: white;
     text-align: center;
@@ -55,6 +65,9 @@ body section {
 .commentaire_perso img {
     border-radius: 5%;
 }
+
+/*Accordion*/
+
 .uk-accordion-title {
     color: white;
     border-bottom: white 1px solid;
@@ -74,6 +87,7 @@ body section {
     align-items: center;
 
 }
+/* ----------------------------*/
 
  /* ICON POUR REMONTER EN HAUT */
 
@@ -113,4 +127,34 @@ footer {
 footer img {
     width: 2vw;
     margin: 3px;
+}
+
+@media screen and (max-width: 1000px){
+    body section ul li div img {
+        display: none;
+    }
+    body section {
+        border: solid 1px grey;
+        padding: 2%;
+        margin: 3% 3%;
+        
+    }
+    .commentaire_perso img {
+        border-radius: 5%;
+        width: 60%;
+    }
+    .commentaire_perso p {
+        font-family: 'Mansalva', cursive;
+        font-size: large;
+        margin: 5%;
+    }
+    footer p {
+        margin: 5%;
+    
+    }
+
+    footer img {
+        width: 12%;
+        margin: 3px;
+    }
 }
