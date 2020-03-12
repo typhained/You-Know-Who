@@ -2,10 +2,53 @@ body {
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=100022), auto;
     background-color: black;
     color: white;
+    font-family: 'Barlow Condensed', sans-serif;
 }
+
 a:hover {
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=100022), auto;
 }
+.title_page {
+    text-align: center;
+}
+
+body section {
+    border: solid 2px grey;
+    padding: 5%;
+    margin: 15%;
+    
+}
+body section img {
+    width: 40%;
+}
+.title_page h1 {
+    color: white;
+    text-align: center;
+    
+}
+.commentaire_perso {
+    font-family: 'Mansalva', cursive;
+}
+
+.uk-accordion-title {
+    color: white;
+    border-bottom: white 1px solid;
+    
+}
+
+.uk-accordion-content {
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+}
+.uk-accordion-content p {
+    padding: 10%;
+}
+.uk-accordion-content img {
+    width: 35%;
+    border: solid 1px grey;
+}
+
  /* ICON POUR REMONTER EN HAUT */
 
 #choixpeau {
