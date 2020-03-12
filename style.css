@@ -36,16 +36,37 @@ h3 {
     text-align: center;
     border-right: 1px solid grey;
     padding: 0;
+    opacity: 90%;
 }
 
-.uk-card img {
+.uk-animation-fade {
     border-radius: 50%;
     padding: 1vh;
     width: 70%
 }
 
+.uk-card-media-top img:hover {
+    filter: blur(4px);
+}
+
+.uk-card-body ul {
+    text-align: left;
+}
+
+.uk-card li {
+    list-style: none;
+    margin: 3px;
+} 
+
+.uk-card-body img {
+    filter: invert(100%);
+    width: 25%;
+}
+
+
+
 .parcours img {
-    width: 30%;
+    width: 20%;
 }
  
 
@@ -56,6 +77,10 @@ h3 {
     bottom: 10px;
     text-decoration: none;
     color: white;
+}
+
+#choixpeau img {
+    filter: invert(100%);
 }
 
 #choixpeau p {
