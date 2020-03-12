@@ -13,6 +13,7 @@
         <link rel="icon" type="image/png" href="https://zupimages.net/up/20/11/gvu4.png" />
         <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Shadows+Into+Light|Jim+Nightshade|Rock+Salt&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -34,10 +35,10 @@
             </div>
 
         </header>
-        <div>
+        <div class="title_page">
             <h1>A propos de moi</h1>
             <div  class="commentaire_perso">
-                <img src="https://zupimages.net/up/20/11/ygqo.jpg" alt="Tom Elvis Jedusor à Poudlard">
+                <img src="img/voldemort.jpg" alt="Tom Elvis Jedusor à Poudlard">
                 <p>" J’ai toujours eu un talent particulier, j’ai toujours été spécial. "</p>
             </div>
         </div>
@@ -47,18 +48,18 @@
 
             <ul uk-accordion>
                 <li class="uk-open">
-                    <a class="uk-accordion-title" href="#">Mon enfance</a>
+                    <a class="uk-accordion-title uk-light" href="#">Mon enfance</a>
                     <div class="uk-accordion-content">
                         <p>J'ai découvert l'histoire de ma famille pendant mes études. Né orphelin d'une mère sorcière
                              et d'un père moldu le 31 décembre 1929, j'ai passé les onze premières années de ma vie à l'orphelinat Wool. Je me 
                              sentais déjà très différent des autres enfants ; jusqu’au jour où Dumbledore est venu me 
                              chercher pour entrer à Poudlard. Il me révèle alors que je suis un sorcier.
                         </p>
-                        <img src="https://vignette.wikia.nocookie.net/harrypotter/images/f/f4/PromoHP6_Tom_Jedusor_11_ans.jpg/revision/latest/scale-to-width-down/340?cb=20110824223205&path-prefix=fr" alt="portrait_Tom_11_ans">
+                        <img id="young_voldy" src="https://vignette.wikia.nocookie.net/harrypotter/images/f/f4/PromoHP6_Tom_Jedusor_11_ans.jpg/revision/latest/scale-to-width-down/340?cb=20110824223205&path-prefix=fr" alt="portrait_Tom_11_ans">
                     </div>
                 </li>
                 <li>
-                    <a class="uk-accordion-title" href="#">Ma scolarité à Poudlard</a>
+                    <a class="uk-accordion-title uk-light" href="#">Ma scolarité à Poudlard</a>
                     <div class="uk-accordion-content">
                         <p>Je ne savais pas, à cette époque, que ma place était réservée depuis ma naissance, car je suis le 
                             descendant d’un des fondateurs de l’école : Salazar Serpentard. 
@@ -67,10 +68,11 @@
                             Les connaissances du professeur Slughorn et ma curiosité m'ont ouvert les portes d'une magie qui 
                             allait être pour moi une façon de vaincre la mort : les horcruxes.
                         </p>
+                        <img src="img/blason_poudlard.png" alt="vêtements_serpentard" id="blason">
                     </div>
                 </li>
                 <li>
-                    <a class="uk-accordion-title" href="#">Défendre les valeurs de ma famille</a>
+                    <a class="uk-accordion-title uk-light" href="#"  >Défendre les valeurs de ma famille </a>
                     <div class="uk-accordion-content">
                         <p>Afin d’être digne de l'héritage de ma famille et de maintenir la grandeur de Poudlard, 
                             je me suis promis de traquer tous les sang-de-bourg qui ne méritent pas d’étudier la magie.
@@ -82,20 +84,22 @@
                             Jedusor ne pouvait pas être. J'entrepris donc de tuer mon géniteur ainsi que son père et m'arrangea 
                             pour faire porter le châpeau à mon oncle, qui fût alors banni à Azkaban.
                         </p>
+                        <img id="secret_door" src="img/Porte_chambre_des_secrets.jpg" alt="Chambre des secrets">
                     </div>
                 </li>
                 <li>
-                    <a class="uk-accordion-title" href="#">Lord Voldemort</a>
+                    <a class="uk-accordion-title uk-light" href="#">Lord Voldemort</a>
                     <div class="uk-accordion-content">
                         <p>Après avoir tué mon père, je ne pouvais garder son nom infâme. Il m'en fallait un qui montre
                             ma grandeur, mon talent et qu'il inspire une telle terreur que plus personne n'osera le prononcer
                             à haute voix. Je décidais donc d’en faire un anagramme : « Tom Elvis Jedusor » devenait alors « Je suis Voldemort ». 
                             Aujourd'hui, la pluspart des sorciers m'appelle "Vous savez qui".
                         </p>
+                        <img src="img/iAmVoldemort.jpg" alt="texte_en_feu" id="iAmVoldy">
                     </div>
                 </li>
                 <li class="uk-open">
-                    <a class="uk-accordion-title" href="#">Mon parcours après l'école</a>
+                    <a class="uk-accordion-title uk-light" href="#">Mon parcours après l'école</a>
                     <div class="uk-accordion-content">
                         <p> Je souhaitais devenir professeur de défense contre les forces du mal, mais ma candidature fût refusée 
                             une première fois en raison de mon jeune âge. 
