@@ -8,6 +8,7 @@ body {
 a:hover {
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=100022), auto;
 }
+
 .title_page {
     text-align: center;
 }
@@ -15,17 +16,33 @@ a:hover {
 body section {
     border: solid 2px grey;
     padding: 5%;
-    margin: 15%;
+    margin: 5% 15%;
     
 }
-body section img {
-    width: 40%;
+#young_voldy {
+    width: 25%;
+    border: grey 1px solid;
 }
+#iAmVoldy {
+    border: grey 1px solid;
+    width: 60%;
+}
+#blason {
+    width: 35%;
+    border: black;
+}
+#secret_door {
+    width: 30%;
+    border: grey 1px solid;
+}
+
 .title_page h1 {
     color: white;
     text-align: center;
-    
+    font-family: 'Rock Salt', cursive;
+    margin-bottom: 5%;    
 }
+
 .commentaire_perso {
     font-family: 'Mansalva', cursive;
 }
@@ -41,12 +58,13 @@ body section img {
     display: flex;
     flex-direction: row;
 }
+
 .uk-accordion-content p {
     padding: 10%;
 }
+
 .uk-accordion-content img {
-    width: 35%;
-    border: solid 1px grey;
+
 }
 
  /* ICON POUR REMONTER EN HAUT */
@@ -59,15 +77,19 @@ body section img {
     text-decoration: none;
     color: white;
 }
+
 #choixpeau p {
     color: white;
 }
+
 #choixpeau a:hover {
     text-decoration: none;
     color: grey;
 }
+
 #choixpeau img {
     width:10vh;
+    filter: invert(100%);
 }
 
  /* FO0TER */
