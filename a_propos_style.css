@@ -2,7 +2,102 @@ body {
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=100022), auto;
     background-color: black;
     color: white;
+    font-family: 'Saira Extra Condensed', sans-serif;
 }
+
+a:hover {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=100022), auto;
+}
+
+body section {
+    border: solid 2px grey;
+    padding: 5%;
+    margin: 5% 15%;
+    
+}
+#menu {
+    background-color: black;
+}
+
+ /*Images*/
+#young_voldy {
+    width: 35%;
+    border: grey 1px solid;
+    margin: 3% 7% 3% 0;
+}
+
+#iAmVoldy {
+    width: 50%;
+}
+
+#blason {
+    width: 35%;
+    border: black;
+}
+
+#secret_door {
+    width: 30%;
+    border: grey 1px solid;
+    margin: 3% 9% 3% 0;
+}
+
+#lucius {
+    width: 30%;
+    border: grey 1px solid;
+    margin: 3% 7% 3% 0;
+}
+
+#horcruxe {
+    border: grey 1px solid;
+}
+
+/* ------------ */
+
+.title_page h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    margin-bottom: 2%;    
+}
+.title_page {
+    text-align: center;
+}
+
+.commentaire_perso {
+    font-family: 'Homemade Apple', cursive;
+    font-size: large;
+}
+.commentaire_perso img {
+    border-radius: 5%;
+}
+
+/*Accordion*/
+
+.uk-accordion-title {
+    color: white;
+    border-bottom: white 1px solid;
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+    font-size: large;
+    
+}
+
+.uk-accordion-content {
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.uk-accordion-content p {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* ----------------------------*/
+
  /* ICON POUR REMONTER EN HAUT */
 
 #choixpeau {
@@ -13,15 +108,20 @@ body {
     text-decoration: none;
     color: white;
 }
+
 #choixpeau p {
     color: white;
+    margin: 1%;
 }
+
 #choixpeau a:hover {
     text-decoration: none;
     color: grey;
 }
+
 #choixpeau img {
     width:10vh;
+    filter: invert(100%);
 }
 
  /* FO0TER */
@@ -36,4 +136,34 @@ footer {
 footer img {
     width: 2vw;
     margin: 3px;
+}
+
+@media screen and (max-width: 1000px){
+    body section ul li div img {
+        display: none;
+    }
+    body section {
+        border: solid 1px grey;
+        padding: 2%;
+        margin: 3% 3%;
+        
+    }
+    .commentaire_perso img {
+        border-radius: 5%;
+        width: 60%;
+    }
+    .commentaire_perso p {
+        font-family: 'Mansalva', cursive;
+        font-size: large;
+        margin: 5%;
+    }
+    footer p {
+        margin: 5%;
+    
+    }
+
+    footer img {
+        width: 8%;
+        margin: 3px;
+    }
 }
