@@ -11,6 +11,10 @@
   <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
 <link rel="stylesheet" href="contact.css">
+
+<!--police-->
+<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Shadows+Into+Light|Jim+Nightshade|Rock+Salt|Saira+Extra+Condensed&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Nixie+One&display=swap" rel="stylesheet">
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
@@ -22,7 +26,28 @@
 
     <header>
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-            <nav class="uk-navbar-container uk-light" uk-navbar="dropbar: true;" style="position: relative; z-index: 980; background-color: black;">
+            <!--Menu mobile-->
+            <nav class="uk-navbar uk-navbar-container uk-box-shadow-medium uk-hidden@m uk-light menu" id="menu" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-toggle" href="#" uk-toggle="target: #menu-mobile">
+                        <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="uk-offcanvas-content">
+                <div id="menu-mobile" uk-offcanvas="mode: push; overlay: true">
+                    <div class="uk-offcanvas-bar">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <ul class="uk-nav uk-nav-default">
+                            <li><a href="index.html">ACCUEIL</a></li>
+                            <li><a href="a_propos.html">A PROPOS</a></li>
+                            <li class="uk-active"><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- MENU ORDI-->
+            <nav class="uk-navbar-container uk-light uk-visible@m" uk-navbar="dropbar: true;" style="position: relative; z-index: 980; background-color: black;">
                 <div class="uk-navbar-left">
         
                     <ul class="uk-navbar-nav">
@@ -39,32 +64,61 @@
     </header>
 
 
-    <div id="after_submit"></div>
-    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-      <div class="row">
-        <label class="required" for="name">Your name:</label><br />
-        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-        <span id="name_validation" class="error_message"></span>
-      </div>
-      <div class="row">
-        <label class="required" for="email">Your email:</label><br />
-        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-        <span id="email_validation" class="error_message"></span>
-      </div>
-      <div class="row">
-        <label class="required" for="message">Your message:</label><br />
-        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-        <span id="message_validation" class="error_message"></span>
-      </div>
-        
-        <input id="submit_button" type="submit" value="Send email" />
+    <form class="uk-form-horizontal uk-margin-large uk-margin-medium-left uk-margin-medium-right uk-light uk-width-1-2@m" id="form">
+        <h1>Rejoins-nous!</h1>
+        <div class="uk-margin">
+            <label class="uk-form-label" for="form-horizontal-text">Nom</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Qui es-tu..">
+            </div>
+        </div>
+
+
+        <div class="uk-margin">
+            <label class="uk-form-label" for="form-horizontal-text">E-mail</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Ton adresse mail..">
+            </div>
+        </div>
+    
+        <div class="uk-margin">
+            <div class="uk-form-label">Quels sorts impardonnables maitrises tu?</div>
+            <div class="uk-form-controls uk-form-controls-text">
+                <label><input class="uk-checkbox" type="checkbox" checked> Avada Kedavra</label>
+                <label><input class="uk-checkbox" type="checkbox"> Endoloris</label>
+                <label><input class="uk-checkbox" type="checkbox"> Imperium</label>
+
+            </div>
+         </div>
+
+         <div class="uk-margin">
+            <label class="uk-form-label" for="form-horizontal-text">Une suggestion?</label>
+            <textarea class="uk-textarea"></textarea>
+
+         </div>
+
+
+         <div class="uk-margin">
+            <label class="uk-form-label" for="form-horizontal-select">Prêt pour éliminer des moldus?</label>
+            <div class="uk-form-controls">
+                <select class="uk-select" id="form-horizontal-select">
+                    <option>Rejoindre</option>
+                    <option>Faire un don</option>
+                </select>
+            </div>
+        </div>
+
+
+        <button class="uk-button uk-button-primary">Envoyer</button>
+    
     </form>
 
 
-
-    <div class="uk-position-relative uk-width-1-2 uk-visible-toggle uk-light" uk-slider="center: true">
+    <div class="uk-position-relative uk-width-1-2@l uk-visible-toggle uk-light " uk-slider="center: true">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
     
+           <h1>La parole de mes fidèles</h1>
+
             <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
                 <li>
                     <div class="uk-card uk-card-secondary">
@@ -95,7 +149,7 @@
                         </div>
                         <div class="uk-card-body">
                             <h3 class="uk-card-title">Severus Rogue</h3>
-                            <p>Sorcier de sang-melée, mon coeur et ma conscience sont partagés entre mon passé et et les liens qui m'unisse avec la famille Potter; et ma loyauté pour celui dont-on-ne-doit-pas-prononcer-le-nom.</p>
+                            <p>Sorcier de sang-melée, mon coeur et ma conscience sont partagés entre mon passé et les liens qui m'unissent avec la famille Potter; et ma loyauté pour celui dont-on-ne-doit-pas-prononcer-le-nom.</p>
                         </div>
                     </div>
                 </li>
@@ -159,6 +213,8 @@
                 </li>
 
             </ul>
+        
+
     
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
@@ -169,6 +225,11 @@
         
     </div>
 
+    <div>
+
+        <img id="Magic" class="uk-margin-medium-right uk-visible@m" src="img/74d40bd02a6b541d732cbd0f4a615163.png" alt="Magic Is Might">
+    
+    </div>
 
         <div id="choixpeau">
             <a href="#">

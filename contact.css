@@ -3,8 +3,33 @@ body {
     background-color: black;
 }
 
+#menu {
+    background-color: black;
+}
+
+
 .commentaire {
     width: 250px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.uk-slider-items{
+    text-align: center;
+}
+#Magic {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40%;
+    opacity: 75%;
+    height: auto;
 }
 
 #choixpeau {
@@ -18,6 +43,7 @@ body {
 
 #choixpeau p {
     color: white;
+    margin: 1%;
 }
 
 #choixpeau a:hover {
@@ -41,4 +67,9 @@ footer {
 footer img {
     width: 2vw;
     margin: 3px;
+}
+
+p {
+
+    font-family: 'Saira Extra Condensed', sans-serif;
 }
