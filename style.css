@@ -1,16 +1,25 @@
+
 body {
     background-color: black;
     color: white;
     cursor: url(img/slytherin1.cur), auto;
     font-family: 'Barlow Condensed', sans-serif;
-
 }
+
+p {
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
 a:hover {
     cursor: url(img/slytherin1.cur), auto;
 }
 
 header {
     margin-bottom: 10vh;
+}
+
+#menu {
+    background-color: black;
 }
 
 
@@ -63,10 +72,18 @@ h3 {
     width: 25%;
 }
 
+.slider {
+    height: 70vh;
+}
 
+.blason {
+    width: 7vw;
+    filter: invert(100%);
+}
 
-.parcours img {
-    width: 20%;
+.uk-placeholder {
+    font-weight: lighter;
+    margin-bottom: 7vh;
 }
  
 
@@ -85,6 +102,7 @@ h3 {
 
 #choixpeau p {
     color: white;
+    margin: 1%;
 }
 
 #choixpeau a:hover {
@@ -98,6 +116,7 @@ h3 {
 
 
 footer {
+    margin-top: 7vh;
     text-align: center;
     text-transform: uppercase;
     padding: 2px;
@@ -108,4 +127,18 @@ footer {
 footer img {
     width: 2vw;
     margin: 3px;
+}
+
+@media (max-width: 940px) {
+
+
+    .uk-card-body ul {
+        display: flex;
+    }
+    
+    
+    .uk-card-body img {
+        filter: invert(100%);
+        width:30%;
+    }
 }
