@@ -2,7 +2,7 @@ body {
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=100022), auto;
     background-color: black;
     color: white;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 a:hover {
@@ -15,11 +15,15 @@ body section {
     margin: 5% 15%;
     
 }
+#menu {
+    background-color: black;
+}
 
  /*Images*/
 #young_voldy {
     width: 35%;
     border: grey 1px solid;
+    margin: 3% 7% 3% 0;
 }
 
 #iAmVoldy {
@@ -34,12 +38,13 @@ body section {
 #secret_door {
     width: 30%;
     border: grey 1px solid;
-    margin: 0 2% 0 0;
+    margin: 3% 9% 3% 0;
 }
 
 #lucius {
     width: 30%;
     border: grey 1px solid;
+    margin: 3% 7% 3% 0;
 }
 
 #horcruxe {
@@ -51,15 +56,15 @@ body section {
 .title_page h1 {
     color: white;
     text-align: center;
-    font-family: 'Satisfy', cursive;
-    margin-bottom: 5%;    
+    font-family: 'Jim Nightshade', cursive;
+    margin-bottom: 2%;    
 }
 .title_page {
     text-align: center;
 }
 
 .commentaire_perso {
-    font-family: 'Mansalva', cursive;
+    font-family: 'Homemade Apple', cursive;
     font-size: large;
 }
 .commentaire_perso img {
@@ -71,6 +76,9 @@ body section {
 .uk-accordion-title {
     color: white;
     border-bottom: white 1px solid;
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+    font-size: large;
     
 }
 
@@ -79,6 +87,7 @@ body section {
     display: flex;
     flex-direction: row;
 }
+
 
 .uk-accordion-content p {
     padding: 10%;
@@ -102,7 +111,7 @@ body section {
 
 #choixpeau p {
     color: white;
-    margin: 1%
+    margin: 1%;
 }
 
 #choixpeau a:hover {
@@ -154,7 +163,7 @@ footer img {
     }
 
     footer img {
-        width: 12%;
+        width: 8%;
         margin: 3px;
     }
 }

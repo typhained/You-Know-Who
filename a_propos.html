@@ -11,15 +11,41 @@
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
         <link rel="icon" type="image/png" href="https://zupimages.net/up/20/11/gvu4.png" />
-        <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nixie+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <!-- NavBar -->
             <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-                <nav class="uk-navbar-container uk-light" uk-navbar="dropbar: true;" style="position: relative; z-index: 980; background-color: black;">
+                
+                <!--Menu mobile-->
+                <nav class="uk-navbar uk-navbar-container uk-box-shadow-medium uk-hidden@m uk-light menu" id="menu" uk-navbar>
+                    <div class="uk-navbar-left">
+                         <a class="uk-navbar-toggle" href="#" uk-toggle="target: #menu-mobile">
+                            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                        </a>
+                    </div>
+                </nav>
+                <div class="uk-offcanvas-content">
+                    <div id="menu-mobile" uk-offcanvas="mode: push; overlay: true">
+                        <div class="uk-offcanvas-bar">
+                             <button class="uk-offcanvas-close" type="button" uk-close></button>
+                            <ul class="uk-nav uk-nav-default">
+                                <li>ACCUEIL</a></li>
+                                <li class="uk-active" ><a href="#"><a href="a_propos.html">A PROPOS</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="uk-navbar-container uk-light uk-visible@m" uk-navbar="dropbar: true;" style="position: relative; z-index: 980; background-color: black;">
                     <div class="uk-navbar-left">
 
                         <ul class="uk-navbar-nav">
