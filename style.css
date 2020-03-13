@@ -102,6 +102,7 @@ h3 {
 
 #choixpeau img {
     filter: invert(100%);
+    
 }
 
 #choixpeau p {
@@ -136,13 +137,7 @@ footer img {
 @media (max-width: 940px) {
 
 
-    .uk-card-body ul {
-        display: flex;
-    }
-    
-    
-    .uk-card-body img {
-        filter: invert(100%);
-        width:30%;
+    .uk-card-body {
+        display: none;
     }
 }
