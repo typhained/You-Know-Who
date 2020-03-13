@@ -55,6 +55,8 @@ h3 {
 
 #choixpeau img {
     filter: invert(100%);
+    width: 10vh;
+
 }
 
 
