@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Shadows+Into+Light|Jim+Nightshade|Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Shadows+Into+Light|Jim+Nightshade|Rock+Salt|Saira+Extra+Condensed|Kalam&display=swap" rel="stylesheet">
 
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
@@ -22,7 +22,29 @@
 <body>
     <header>
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-            <nav class="uk-navbar-container uk-light" uk-navbar="dropbar: true;" style="position: relative; z-index: 980; background-color: black;">
+
+            <!--Menu mobile-->
+            <nav class="uk-navbar uk-navbar-container uk-box-shadow-medium uk-hidden@m uk-light menu" id="menu" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-toggle" href="#" uk-toggle="target: #menu-mobile">
+                        <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="uk-offcanvas-content">
+                <div id="menu-mobile" uk-offcanvas="mode: push; overlay: true">
+                    <div class="uk-offcanvas-bar">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <ul class="uk-nav uk-nav-default">
+                            <li class="uk-active" ><a href="index.html">ACCUEIL</a></li>
+                            <li><a href="a_propos.html">A PROPOS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Bureau-->
+            <nav class="uk-navbar-container uk-light uk-visible@m" uk-navbar="dropbar: true;" style="position: relative; z-index: 980; background-color: black;">
                 <div class="uk-navbar-left">
         
                     <ul class="uk-navbar-nav">
@@ -44,33 +66,67 @@
         </div>
     
     </div>
-    <div class="uk-grid">
+    <div class="uk-grid uk-margin-large-bottom">
 
         <div class="uk-width-1-4@m uk-card uk-card-secondary uk-margin-auto">
             <div class="uk-card-media-top">
                 <img class="uk-animation-fade" src="https://files.cults3d.com/uploaders/12086353/illustration-file/bb7747fa-230c-4968-9be4-4e0204b9885a/3267592144_1_5_TdwTxXHX_large.jpg" alt="Beautiful_voldemort">
             </div>
             <div class="uk-card-body">
-                <p>Competences à écrire</p>
+                <h3>Mes Atouts</h3>
                 <ul>
-                    <li>Comp</li>
-                    <li>Comp</li>
-                    <li>Comp</li>
+                    <li><img src="img/_potion.png" alt="">Maîtrise des potions</li>
+                    <li><img src="img/_fourchelang.png" alt="">Fourchelang niveau bilingue</li>
+                    <li><img src="img/_balai.png" alt="">Haute voltige</li>
+                    <li><img src="img/_grimoire.png" alt="">Connaissances obscures</li>
+                    <li><img src="img/_sort.png" alt="">Large panel de sorts interdits</li>
+                    <li><img src="img/_mangemorts.png" alt="">Communauté de fidèles</li>
                 </ul>
             </div>
             
         </div>
-        <div class="uk-width-1-2@m uk-padding parcours">
-            <h1>Parcours</h1>
-            <img src="sly.png" alt="Serpentard"/>
-            <h2>Serpentard/Poudlard</h2>
-            <p>BLABLABLA</p>
 
+        <div class="uk-position-relative uk-visible-toggle uk-light uk-width-1-2@m uk-margin-large-right uk-margin-large-top uk-margin-large-bottom slider" tabindex="-1" uk-slideshow="animation: fade">
+            <h2>Sur les traces de mes réussites scolaires & associatives</h2>
+            <ul class="uk-slideshow-items uk-margin-large-top slider">
+                <li>
+                    <img src="img/_hogwarts.jpg" alt="" uk-cover>
+                    <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right uk-width-medium slider">
+                        <h3 class="uk-margin-remove">Poudlard</h3>
+                        <p class="uk-margin-remove">L'école de mes rêves.</p>
+                        <p>En tout cas au départ. </p>
+                        <p>Je me suis vite rendu compte que même si j'allais y apprendre de nombreuses choses, certaines personnes voulaient censurer tout ce qui était réellement intéressant. J'ai donc décidé d'apprendre par moi-même tout ce qui m'intéressait, peu importe ce que ces coincés pouvaient penser.</p>
+                        <h3>BUSES: Optimal</h3>
+                        <h3>ASPIC: Optimal</h3>
+                        <img class="blason" src="img/_hogwarts.png" alt="Poudlard avec la marque des mangemorts">
+                    </div>
+                </li>
+                <li>
+                    <img src="img/serpentard.jpg" alt="" uk-cover>
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">Serpentard</h3>
+                        <p class="uk-margin-remove">Serpentard, l'unique maison de Poudlard au final. J'y ai été préfet et bien évidemment Préfet en chef. C'était d'une facilité déconcertante et j'ai su apprécier de pouvoir surveiller, manipuler et dénoncer la plupart des élèvres. Surtout ces sang-de-bourbes!</p>
+                        <img class="blason" src="img/_serpy.png" alt="blason harry potter">
+                    </div>
+                   
+                </li>
+                <li>
+                    <img src="img/_deatheaters.jpg" alt="" uk-cover>
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">Mangemorts</h3>
+                        <p class="uk-margin-remove">Au fil du temps, j'ai su rassembler une communauté de fidèles qui me sont dévoués et sont prêts à tout pour moi. Quel que soit votre demande, j'aurai toujours quelqu'un pour le réalister. Ainsi, m'engager c'est savoir que vous ne serez plus jamais seuls.</p>
+                    </div>
+                </li>
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+            <div class="uk-placeholder uk-text-center uk-visible@l"><a href="contact.html/#form"><h3>Déjà fou de moi? Venez par ici pour nous rejoindre!</h3></a></div>
         </div>
+        
     </div>
         
-
-
     
     <div id="choixpeau">
         <a href="#">
@@ -78,6 +134,7 @@
             <p>TOP</p>
         </a>
     </div>
+
     <footer>
         <div>  
             <p>Made with <span uk-icon="heart"></span> and brilliant by the Gorgeous You-Know-Who</p>
