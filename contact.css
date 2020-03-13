@@ -1,0 +1,77 @@
+body {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=100022),auto;
+    background-color: black;
+}
+
+#menu {
+    background-color: black;
+}
+
+
+.commentaire {
+    width: 250px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Kalam", cursive;
+
+}
+
+h3 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.uk-slider-items{
+    text-align: center;
+}
+#Magic {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40%;
+    opacity: 75%;
+    height: auto;
+}
+
+#choixpeau {
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#choixpeau p {
+    color: white;
+    margin: 1%;
+}
+
+#choixpeau a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+#choixpeau img {
+    filter: invert(100%);
+}
+
+
+footer {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px;
+    display: inline;
+
+}
+
+footer img {
+    width: 2vw;
+    margin: 3px;
+}
+
+p {
+
+    font-family: 'Saira Extra Condensed', sans-serif;
+}

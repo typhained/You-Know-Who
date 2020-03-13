@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+
+<link rel="icon" type="image/png" href="https://www.zupimages.net/up/20/11/gvu4.png" />
+
+  <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="contact.css">
+
+<!--police-->
+<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Shadows+Into+Light|Jim+Nightshade|Rock+Salt|Saira+Extra+Condensed&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Nixie+One|Kalam&display=swap" rel="stylesheet">
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <header>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <!--Menu mobile-->
+            <nav class="uk-navbar uk-navbar-container uk-box-shadow-medium uk-hidden@m uk-light menu" id="menu" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-toggle" href="#" uk-toggle="target: #menu-mobile">
+                        <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="uk-offcanvas-content">
+                <div id="menu-mobile" uk-offcanvas="mode: push; overlay: true">
+                    <div class="uk-offcanvas-bar">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <ul class="uk-nav uk-nav-default">
+                            <li><a href="index.html">ACCUEIL</a></li>
+                            <li><a href="a_propos.html">A PROPOS</a></li>
+                            <li class="uk-active"><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- MENU ORDI-->
+            <nav class="uk-navbar-container uk-light uk-visible@m" uk-navbar="dropbar: true;" style="position: relative; z-index: 980; background-color: black;">
+                <div class="uk-navbar-left">
+        
+                    <ul class="uk-navbar-nav">
+                        <li ><a href="index.html">Accueil</a></li>
+                        <li>
+                            <a href="a_propos.html">A propos</a>
+                        </li>
+                        <li class="uk-active"><a href="#">Contact</a></li>
+                    </ul>
+        
+                </div>
+            </nav>
+        </div>       
+    </header>
+
+
+    <form class="uk-form-horizontal uk-margin-large uk-margin-medium-left uk-margin-medium-right uk-light uk-width-1-2@m" id="form">
+        <h1>Rejoins-nous!</h1>
+        <div class="uk-margin">
+            <label class="uk-form-label" for="form-horizontal-text">Nom</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Qui es-tu..">
+            </div>
+        </div>
+
+
+        <div class="uk-margin">
+            <label class="uk-form-label" for="form-horizontal-text">E-mail</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Ton adresse mail..">
+            </div>
+        </div>
+    
+        <div class="uk-margin">
+            <div class="uk-form-label">Quels sorts impardonnables maitrises tu?</div>
+            <div class="uk-form-controls uk-form-controls-text">
+                <label><input class="uk-checkbox" type="checkbox" checked> Avada Kedavra</label>
+                <label><input class="uk-checkbox" type="checkbox"> Endoloris</label>
+                <label><input class="uk-checkbox" type="checkbox"> Imperium</label>
+
+            </div>
+         </div>
+
+         <div class="uk-margin">
+            <label class="uk-form-label" for="form-horizontal-text">Une suggestion?</label>
+            <textarea class="uk-textarea"></textarea>
+
+         </div>
+
+
+         <div class="uk-margin">
+            <label class="uk-form-label" for="form-horizontal-select">Prêt pour éliminer des moldus?</label>
+            <div class="uk-form-controls">
+                <select class="uk-select" id="form-horizontal-select">
+                    <option>Rejoindre</option>
+                    <option>Faire un don</option>
+                </select>
+            </div>
+        </div>
+
+
+        <button class="uk-button uk-button-primary">Envoyer</button>
+    
+    </form>
+
+
+    <div class="uk-position-relative uk-width-1-2@l uk-visible-toggle uk-light " uk-slider="center: true">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+    
+           <h1>La parole de mes fidèles</h1>
+
+            <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="img/Nagini.jpeg" alt="Nagini">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Nagini</h3>
+                            <p>Je suis mon maître depuis près d'un siècle, depuis que j'ai abandonné ma forme humaine et suis devenu un horcruxe je me nourris des innocents que mon maître ne tue pas de ses propres mains.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="img/Peter Pettigrew.jpg" alt="Peter Pettigrow">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Peter Pettigrow</h3>
+                            <p>Après avoir trahi l'ordre du phoenix, je me range du coté du seigneur des tenèbres pour devenir l'un de ses fidèles serviteurs.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="img/severus-rogue.jpg" alt="Severus Rogue">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Severus Rogue</h3>
+                            <p>Sorcier de sang-melée, mon coeur et ma conscience sont partagés entre mon passé et les liens qui m'unissent avec la famille Potter; et ma loyauté pour celui dont-on-ne-doit-pas-prononcer-le-nom.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="img/greyback.jpg" alt="Fenrire Greyback">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Fenrir Greyback</h3>
+                            <p>Partisan de la superiorité de la race des loups-garous sur les sorciers classiques, j'aime mordre et contaminer les autres sorciers. Je me range du coté de Voldemort pour assouvir ma soif de sang de moldus.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="img/bellatrix-lestrange.jpg" alt="Bellatrix Lestrange">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Bellatrix Lestrange</h3>
+                            <p>J'ai été et je reste la plus loyale servante du maitre des ténèbres. C'est lui qui m'as appris à maitriser les forces du mal et je connais des sortilèges d'une telle puissance que tu ne seras jamais de taille à rivaliser avec moi.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="img/Lucius_Malefoy.jpg" alt="Lucius Malefoy">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Lucius Malefoy</h3>
+                            <p>Aprés avoir placé ma famille sous l'ordre du seigneur des ténèbres, je dirige d'une main de fer les mangemorts. De sang pur je traque sans remords les moldus et nés-moldus.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="img/karkaroff.jpg" alt="Igor Karkaroff">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Igor Karkaroff</h3>
+                            <p>Avec de grandes dispositions pour la magie noire, j'inspire la peur et la méfiance aux autres sorciers, je dirige l'école de Durmstrang, Davai.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="uk-card uk-card-secondary">
+                        <div class="uk-card-media-top">
+                            <img src="img/PromoHP4_Barty_Croupton_Jr.jpg" alt="Barty Croupton Jr">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Barty Croupton Jr</h3>
+                            <p>De nature très intelligente et ayant reçu une bonne éducation, je bascule vers les forces du mal et rejoint le seigneur des ténèbres en commetant les pires atrocités en son nom.</p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        
+
+    
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+        </div>
+    
+        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        
+    </div>
+
+    <div>
+
+        <img id="Magic" class="uk-margin-medium-right uk-visible@m" src="img/74d40bd02a6b541d732cbd0f4a615163.png" alt="Magic Is Might">
+    
+    </div>
+
+        <div id="choixpeau">
+            <a href="#">
+                <img src="img/hat.png">
+                <p>TOP</p>
+            </a>
+        </div>
+
+        <footer>
+            <div>  
+                <p>Made with <span uk-icon="heart"></span> and brilliant by the Gorgeous You-Know-Who</p>
+                <a href="https://www.linkedin.com/company/apocalypse-voldemort/" target="_blank"><img src="img/linkedin.png"></a>
+                <a href="https://www.instagram.com/voldemort_off/?hl=fr" target="_blank"><img src="img/insta.png"></a>
+                <a href="https://www.facebook.com/L.Voldy" target="_blank"><img src="img/fb.png"></a>
+            </div>     
+        </footer> 
+
+</body>
+</html>

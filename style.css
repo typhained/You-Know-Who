@@ -1,1 +1,148 @@
 
+body {
+    background-color: black;
+    color: white;
+    cursor: url(img/slytherin1.cur), auto;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+a:hover {
+    cursor: url(img/slytherin1.cur), auto;
+}
+
+header {
+    margin-bottom: 10vh;
+}
+
+#menu {
+    background-color: black;
+}
+
+
+#test-target {
+    height: 85vh;
+    margin-bottom: 5vh;
+}
+
+#test-target h1 {
+    font-size: 35px;
+    font-family: 'Rock Salt', cursive;
+}
+
+h2 {
+    font-family: "Kalam", cursive;
+}
+
+h3 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.para {
+    text-align: center;
+}
+
+.uk-card {
+    text-align: center;
+    border-right: 1px solid grey;
+    padding: 0;
+    opacity: 90%;
+}
+
+.uk-animation-fade {
+    border-radius: 50%;
+    padding: 1vh;
+    width: 70%
+}
+
+.uk-card-media-top img:hover {
+    filter: blur(4px);
+}
+
+.uk-card-body ul {
+    text-align: left;
+}
+
+.uk-card li {
+    list-style: none;
+    margin: 3px;
+} 
+
+.uk-card-body img {
+    filter: invert(100%);
+    width: 25%;
+}
+
+.slider {
+    height: 70vh;
+}
+
+.blason {
+    width: 7vw;
+    filter: invert(100%);
+}
+
+.uk-placeholder {
+    font-weight: lighter;
+    margin-bottom: 7vh;
+}
+ 
+
+#choixpeau {
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#choixpeau img {
+    filter: invert(100%);
+}
+
+#choixpeau p {
+    color: white;
+    margin: 1%;
+}
+
+#choixpeau a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+#choixpeau img {
+    width:10vh;
+}
+
+
+footer {
+    margin-top: 7vh;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px;
+    display: inline;
+
+}
+
+footer img {
+    width: 2vw;
+    margin: 3px;
+}
+
+@media (max-width: 940px) {
+
+
+    .uk-card-body ul {
+        display: flex;
+    }
+    
+    
+    .uk-card-body img {
+        filter: invert(100%);
+        width:30%;
+    }
+}
